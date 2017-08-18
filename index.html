@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geocoding service</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/knockout-3.2.0.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!-- Enter api key in placeholder-->
+</head>
+<body>
+    <!-- Sidenav to hold list -->
+    <aside id="mySidenav" class="sidenav">
+        <a class="closebtn" data-bind="click: closeNav">&times;</a>
+        <div >
+            <input id="search" data-bind="textInput: searchString" placeholder="Enter Search String"/>
+        </div>
+        <div>
+            <ul data-bind="foreach: filteredArray">
+                <li data-bind="text: name, click: $parent.onClick"></li>
+            </ul>
+        </div>
+    </aside>
+    <div id="openBar">
+        <span id="openButton" data-bind="click: openNav">&#9776; open</span>
+    </div>
+    <!-- Map Holder -->
+    <div id="map">
+    </div>
+
+    <script src="js/main.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAt6VyTnDe0jhJ_86JF7A6ah8p26xzwA2A&callback=onApiLoad" onerror="gmapsError()" ></script>
+
+
+</body>
+</html>
