@@ -12,3 +12,5 @@ Neighborhood Map
 * http://knockoutjs.com/
 * https://developers.google.com/maps/documentation/javascript/markers
 * https://developers.google.com/maps/documentation/
+
+####For some reason, opening the page may cause the browser to see the wiki web data as "not secure". You may have to load the scripts manually from the title bar to view.
